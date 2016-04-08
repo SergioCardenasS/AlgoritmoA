@@ -1,5 +1,6 @@
 
 from constants import *
+from grafo import *
 from math import sqrt
 
 def crear_matriz():
@@ -17,3 +18,15 @@ def encontrar_centro(tupla):
 
 def distan_eucli(first,second):
 	return sqrt(sum( (second - first)**2 for first, second in zip(first, second)))
+
+def crear_grafo():
+    grafo = []
+    for x in range(tam):
+        for y in range(tam):
+            grafo.append(punto((x,y)))
+    return grafo
+
+def index_grafo(grafo,punto_actual):
+    for index in range(len(grafo)):
+        if(punto_actual == grafo[index].pos):
+            return index
