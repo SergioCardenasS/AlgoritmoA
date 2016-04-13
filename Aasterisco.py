@@ -23,7 +23,7 @@ def AlgoritmoA(matriz,punto_inicial,punto_final,lista_respuesta):
 			grafo[index] = nodo
 			if(nodo.pos == punto_final):
 				lista_respuesta.append(nodo.pos)
-				return lista_respuesta
+				break;
 			if not (punto_actual in lista_respuesta):
 				if not (nodo.pos in lista_respuesta):
 					lista_respuesta.append(nodo.pos)
@@ -40,4 +40,4 @@ def AlgoritmoA(matriz,punto_inicial,punto_final,lista_respuesta):
 			lista_respuesta.pop()
 			index = index_grafo(grafo,(pila[len(pila)-1]).pos)
 			nodo = grafo[index]
-	return lista_respuesta
+	

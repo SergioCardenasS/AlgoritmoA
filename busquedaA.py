@@ -86,6 +86,7 @@ def main():
                     yRect = (MARGEN+ALTO) * fila + MARGEN + yGrid
                     if (xRect < heightGrid and yRect < widthGrid):
                         pygame.draw.rect(pantalla,color, [xRect, yRect, LARGO, ALTO])
+                        
             if(len(lista_respuesta)>0):
                 for index in range(len(lista_respuesta)-1):
                     pygame.draw.line(pantalla, (0,255,255),encontrar_centro(lista_respuesta[index]),encontrar_centro(lista_respuesta[index+1]), 2)

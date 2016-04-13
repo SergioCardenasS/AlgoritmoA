@@ -17,7 +17,7 @@ yGrid = 20
 widthGrid = 560
 heightGrid = 550
 #numero de bloques
-tam = 20
+tam = 30
 #Largo y alto de los bloques
 LARGO = (widthGrid/tam)- 2*MARGEN
 ALTO = (heightGrid/tam)- 2*MARGEN

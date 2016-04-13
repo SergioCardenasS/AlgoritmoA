@@ -16,6 +16,7 @@ def encontrar_centro(tupla):
     y = (tupla[0]*(LARGO + MARGEN)+yGrid)+ALTO/2
     return (x,y)
 
+
 def distan_eucli(first,second):
 	return sqrt(sum( (second - first)**2 for first, second in zip(first, second)))
 
